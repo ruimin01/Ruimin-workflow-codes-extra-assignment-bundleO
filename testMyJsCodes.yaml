@@ -1,0 +1,16 @@
+name: Ruimin_workflow_codes_for_Assignemnt_Bundle_O
+run-name: testtest ${{ github.actor }} is testing out workflow codes 🚀
+on: [push]
+jobs:
+  Ruimin_workflow_codes_for_Assignemnt_Bundle_O:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
+      - name: run the npm test command to test the code 
+        run: |
+          npm install
+          npm test
